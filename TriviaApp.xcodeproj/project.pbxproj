@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236D37EB244D4DDE0081EFC5 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 236D37EA244D4DDE0081EFC5 /* alarm_sound.mp3 */; };
 		FB84C1A2243E614800990328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C1A1243E614800990328 /* AppDelegate.swift */; };
 		FB84C1A4243E614800990328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C1A3243E614800990328 /* SceneDelegate.swift */; };
 		FB84C1A6243E614800990328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84C1A5243E614800990328 /* ViewController.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		236D37EA244D4DDE0081EFC5 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = "../../../Documents/timerapp-lmalladi2022/Timer/alarm_sound.mp3"; sourceTree = "<group>"; };
+		236D37ED245149F70081EFC5 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../File.swift; sourceTree = "<group>"; };
 		FB84C19E243E614800990328 /* TriviaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB84C1A1243E614800990328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB84C1A3243E614800990328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,8 +84,8 @@
 		FB84C195243E614800990328 = {
 			isa = PBXGroup;
 			children = (
+				236D37ED245149F70081EFC5 /* File.swift */,
 				FB84C1A0243E614800990328 /* TriviaApp */,
-				FB84C1D1243E618400990328 /* Model */,
 				FB84C1B7243E614D00990328 /* TriviaAppTests */,
 				FB84C1C2243E614D00990328 /* TriviaAppUITests */,
 				FB84C19F243E614800990328 /* Products */,
@@ -107,7 +110,9 @@
 				FB84C1A5243E614800990328 /* ViewController.swift */,
 				FB84C1A7243E614800990328 /* Main.storyboard */,
 				FB84C1AA243E614C00990328 /* Assets.xcassets */,
+				236D37EA244D4DDE0081EFC5 /* alarm_sound.mp3 */,
 				FB84C1AC243E614C00990328 /* LaunchScreen.storyboard */,
+				FB84C1D1243E618400990328 /* Model */,
 				FB84C1AF243E614C00990328 /* Info.plist */,
 			);
 			path = TriviaApp;
@@ -245,6 +250,7 @@
 			files = (
 				FB84C1AE243E614C00990328 /* LaunchScreen.storyboard in Resources */,
 				FB84C1AB243E614C00990328 /* Assets.xcassets in Resources */,
+				236D37EB244D4DDE0081EFC5 /* alarm_sound.mp3 in Resources */,
 				FB84C1A9243E614800990328 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
