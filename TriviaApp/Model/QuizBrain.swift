@@ -71,7 +71,7 @@ struct Question {
       
       var endFlag: Int = 0
           
-      }
+    
       
       //FUNCTION - checking the users answer
       //FORM: func function_name(user's answer (ie a String) -> returns a true or false
@@ -79,30 +79,53 @@ struct Question {
       
       func checkAnswer(userAnswer: String) -> Bool{
         if(userAnswer == quiz[questionNumber].answer){
-            
+            return true
+        }
+        else {
+            return false
         }
      
       }
+    
+     //FUNCTION - retrieving the questions text
+     //FORM: func functions_name() -> returns question (ie String)
 
-      func getQuestionText(questionNumber: String){
-      //FUNCTION - retrieving the questions text
-          //FORM: func functions_name() -> returns question (ie String)
+      func getQuestionText() -> String{
+        return quiz[questionNumber].text
+        
       }
       
-      func getProgress(totalQuestion: Float){
-      //FUNCTION - Retrieves user's progress (question number / total number of questions)
-          //FORM: func functions_name() -> returns a number (ie Float)
+     //FUNCTION - Retrieves user's progress (question number / total number of questions)
+     //FORM: func functions_name() -> returns a number (ie Float)
+    
+    func getProgress() -> Float{
+      
+        return Float(questionNumber) / Float(quiz.count)
+        
+        
+    
       }
       
-      func getScore(scoreRight: Float){
-      //FUNCTION - retrieves user's score (score right / total number of answers)
-          //FORM: func functions_name -> This could a String ("this is your score...") or could just be a number (ie Float)
+    //FUNCTION - retrieves user's score (score right / total number of answers)
+            //FORM: func functions_name -> This could a String ("this is your score...") or could just be a number (ie Float)
+    
+    func getScore() -> String{
+
+        return String(scoreRight / quiz.count)
+    
       }
       
     // mutating func nextQuestion()
 
       //FUNCTION - updates the variable that is acting as our array index (where in the index are we currently). When the user answers a question, we want to move to the next question
           //FORM: mutating func function_name()
-      
+    
+    mutating func nextQuestion(){
+        questionNumber += 1
+        //same as saying questionNumber = questionNumber + 1
+        
+    }
+    
+}
       
       
